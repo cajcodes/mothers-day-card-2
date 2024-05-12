@@ -83,3 +83,41 @@
     color: rgb(0, 0, 0);
   }
   
+  /* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .MainEnvelope {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .envelope-box {
+    width: 200px;
+    height: 150px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .arrow-down {
+    width: 100px;
+    height: 100px;
+    border-left-width: 100px;
+    border-right-width: 100px;
+    border-top-width: 85px;
+  }
+
+  .text1 {
+    top: -75px;
+  }
+
+  .card-flyout {
+    width: 15em;
+    height: 8em;
+  }
+
+  .envelope.open .card-flyout {
+    transform: translateY(-10em) scale(1.5);
+  }
+}
