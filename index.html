@@ -34,5 +34,31 @@
         </div>
       </div>
     </div>
+    <<div class="popup">
+      <p>
+        Thank you for being an amazing sister<br>
+        and an even more amazing mother.<br>
+        Your kids are lucky to have you.<br>
+        <br>
+        Lots of love, Christopher
+      </p>
+    </div>
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const envelopeBox = document.querySelector('.envelope-box');
+      const popup = document.querySelector('.popup');
+  
+      envelopeBox.addEventListener('click', function () {
+        envelopeBox.classList.toggle('open');
+        if (envelopeBox.classList.contains('open')) {
+          popup.style.opacity = '1';
+          popup.style.visibility = 'visible';
+        } else {
+          popup.style.opacity = '0';
+          popup.style.visibility = 'hidden';
+        }
+      });
+    });
+  </script>  
 </html>
